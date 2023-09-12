@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Cliente</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Alterar  Cliente</h1> 
+        <nav>  
+    <a href="lista-cliente.php">Lista de Clientes</a>
+    <a href="formulario-cliente.html">Formulario Cliente</a>
+    </nav>
+    </header>
+    <form action="altera-cliente.php" method="post">
+        <p>
+            <label for="">Id :</label>
+            <input type="text" name="id" size="5" >
+        </p>
+    <p>
+        <label for="">Nome :</label>
+        <input type="text" name="nome" >
+    </p>
+    <p>
+        <label for="">Email :</label>
+        <input type="text" name="email" >
+    </p>
+    <p>
+        <label for="">Sexo: </label>
+        <input type="radio" name="sexo" value="masculino" >Masculino
+    
+        <input type="radio" name="sexo" value="feminino" >feminino
+    </p>
+     <p>
+        <label for="">Esporte Preferido :</label> <br>
+        <input type="checkbox" name="esporte" value="Futebol">Futebol <br>
+        <input type="checkbox" name="esporte" value="Volei">volei <br>
+        <input type="checkbox" name="esporte" value="Natacao">Natação<br>
+        <input type="checkbox" name="esporte" value="Basquete">Basquete <br>
+     </p>
+     <p>
+        <h2>Grau de Ensino</h2>
+        <select name="grauEnsino_id">
+            <option value="1">primario</option>
+            <option value="2">ginasio</option>
+            <option value="3">ensino medio</option>
+            <option value="4">ensino superior</option>
+        </select>
+        </p>
+     <p>
+        <input type="submit" value="Alterar">
+        <input type="reset" value="Limpar">
+     </p>
+
+    </form>  
+</body>
+</html>
